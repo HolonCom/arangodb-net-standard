@@ -6,6 +6,7 @@ using ArangoDBNetStandard.CursorApi;
 using ArangoDBNetStandard.DatabaseApi;
 using ArangoDBNetStandard.DocumentApi;
 using ArangoDBNetStandard.GraphApi;
+using ArangoDBNetStandard.ImportApi;
 using ArangoDBNetStandard.TransactionApi;
 using ArangoDBNetStandard.UserApi;
 
@@ -47,6 +48,11 @@ namespace ArangoDBNetStandard
         /// Transaction API
         /// </summary>
         TransactionApiClient Transaction { get; }
+
+        /// <summary>
+        /// Import API
+        /// </summary>
+        ImportApiClient Import { get; }
 
         /// <summary>
         /// Graph API
